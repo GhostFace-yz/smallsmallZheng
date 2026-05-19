@@ -1,0 +1,4 @@
+your-domain.com {
+    # 如需公网访问可在此添加反向代理
+    # reverse_proxy /qrcode* 127.0.0.1:3001
+}

@@ -1,0 +1,33 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "/home/ubuntu/.openclaw/workspace"
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "YOUR_AUTH_TOKEN_HERE"
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "kimi": {
+        "baseUrl": "https://api.kimi.com/coding/",
+        "apiKey": "YOUR_KIMI_API_KEY_HERE",
+        "models": [
+          {
+            "id": "kimi-latest",
+            "name": "kimi-latest",
+            "api": "anthropic-messages",
+            "contextWindow": 200000,
+            "maxTokens": 8192,
+            "input": ["text", "image"]
+          }
+        ]
+      }
+    }
+  }
+}
